@@ -22,10 +22,6 @@ node create-and-populate.js
 ```
 - Você já pode executar o projeto e assim o servidor local já estará rodando:
 ```bash
-npm run dev
-```
-ou
-```bash
 npm start
 ```
 
