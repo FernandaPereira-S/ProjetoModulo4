@@ -4,30 +4,28 @@
 - Programa necessário para inicialização do projeto;
 - Download: [link](https://nodejs.org/en/). Baixar a versão LTS do sistema operacional utilizado pelo usuário;
 - Após download, checar no terminal de seu computar a verdsão instalada, através do comando:
-```bash
+```
 node -v
 ```
-
 ***
 - Agora será necessário instalar as dependências do projeto. Abra o terminal no seu editor de código, e execute o seguinte:
 ```
 npm install
 ```
-
 ***
 ## Execução do projeto:
-- Depois de instalar todas as dependências, você deve executar o arquivo de banco de dados. Entra na pasta infra pelo terminal e execute:
-```bash
+- Depois de instalar todas as dependências, execute o banco de dados, acessando a pasta infra pelo terminal do seu editor de código e execute:
+```
 node create-and-populate.js
 ```
-- Você já pode executar o projeto e assim o servidor local já estará rodando:
-```bash
+- ASsim, já é possível executar o projeto e o servidor local já estará rodando:
+```
 npm start
 ```
 
 ***
 ## Rotas do projeto:
-- Nesse projeto foi utilizado o padrão de **_API Rest_** e as rotas consistem em duas partes: um método HTTP e um caminho para um recurso que será usado. Para esse projeto usamos os métodos HTTP baseados no **_CRUD_**.
+- PADRÃONesse projeto foi utilizado o padrão de **_API Rest_** e as rotas consistem em duas partes: um método HTTP e um caminho para um recurso que será usado. Para esse projeto usamos os métodos HTTP baseados no **_CRUD_**.
 ### Create - **POST**:
 - A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
 - Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
