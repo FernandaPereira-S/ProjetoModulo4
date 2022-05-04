@@ -9,8 +9,8 @@ node -v
 ```
 
 ***
-- Agora será necessário instalar as dependências do projeto. Abra o terminal **_dentro da pasta do projeto_**, ou pelo seu editor de código, e execute o seguinte:
-```bash
+- Agora será necessário instalar as dependências do projeto. Abra o terminal no seu editor de código, e execute o seguinte:
+```
 npm install
 ```
 
