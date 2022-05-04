@@ -35,6 +35,18 @@ class HospedeDAO{
 
     }
 
+    rHospedeId(id){
+        return new Promise((resolve, reject) =>{
+            this.bd.all(`SELECT * FROM HOSPEDE WHERE ID=${id}`, (err, results) => {
+                if(err){
+                   reject(err)
+                }else{
+                   resolve(results)
+                }
+            })
+        })
+
+    }
     //atualiza
     uHospede(Parametros){
         return new Promise((resolve, reject)=>{
