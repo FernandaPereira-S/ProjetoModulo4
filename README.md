@@ -18,16 +18,16 @@ npm install
 ```
 node create-and-populate.js
 ```
-- ASsim, já é possível executar o projeto e o servidor local já estará rodando:
+- Assim, já é possível executar o projeto e o servidor local já estará rodando:
 ```
 npm start
 ```
 
 ***
 ## Rotas do projeto:
-- PADRÃONesse projeto foi utilizado o padrão de **_API Rest_** e as rotas consistem em duas partes: um método HTTP e um caminho para um recurso que será usado. Para esse projeto usamos os métodos HTTP baseados no **_CRUD_**.
+- O projeto foi feito utilizando o padrão de **_API Rest_**, que consiste em rotas divididas em duas partes: um método HTTP e um caminho para um recurso que será usado. Para os métodos de HTTP, utilizou-se o **_CRUD_**.
 ### Create - **POST**:
-- A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
+- Para consultar as rotas, usa-se uma ferramenta para consulta de requisições, da qual indicamos o [Insomnia](https://insomnia.rest/), onde você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
 - Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
 ![post](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressPost.jpg)
 
