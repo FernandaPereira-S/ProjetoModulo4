@@ -47,7 +47,7 @@ class HospedeDAO{
         })
 
     }
-    //atualiza
+
     uHospede(Parametros){
         return new Promise((resolve, reject)=>{
             this.bd.run(`UPDATE HOSPEDE SET NOME = ?, EMAIL = ?, TELEFONE = ? , CPF = ?, DATA = ? WHERE id = ?`, Parametros ,(err) => {

@@ -33,6 +33,19 @@ const hospede = (app, bd)=>{
         espera()
     })
 
+    app.get('/hospede/:id', (req, res) => {
+        const espera = async() => {
+            try{
+                const hospede = await DAOHospede.rHospedeId(req.params.id)
+                res.send(hospede)
+            }catch(err){
+                res.send(err)
+            }
+
+        }
+        espera()
+    })
+
     //atualiza
     app.put('/hospede/:id',(req, res) =>{
      const body = req.body
