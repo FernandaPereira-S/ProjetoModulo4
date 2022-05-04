@@ -27,8 +27,9 @@ npm start
 ## Rotas do projeto:
 - O projeto foi feito utilizando o padrão de **_API Rest_**, que consiste em rotas divididas em duas partes: um método HTTP e um caminho para um recurso que será usado. Para os métodos de HTTP, utilizou-se o **_CRUD_**.
 ### Create - **POST**:
-- Para consultar as rotas, usa-se uma ferramenta para consulta de requisições, da qual indicamos o [Insomnia](https://insomnia.rest/), onde você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
-- Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
+- Para consultar as rotas, usa-se uma ferramenta para consulta de requisições, da qual indicamos o [Insomnia](https://insomnia.rest/), onde você pode consultar a API por esse e outros métodos. Nessa demonstração, estamos rodando o método POST e informando a URL **_localhost:port/address_**.
+- É necessário verificar anter se o seu servidor está rodando, caso contrário não será possível testar qualquer método. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
+
 ![rotapost](https://user-images.githubusercontent.com/95878600/166620427-083b9470-be46-430b-8d1b-525dd5a302bc.jpg)
 
 ***
