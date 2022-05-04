@@ -35,21 +35,21 @@ npm start
 ### Read - **GET**:
 1. **GET/path**
 - Com o servidor rodando e sua ferramenta escolhida aberta, você seleciona o método GET e ao lado a URL para a requisição, sendo ela: **_localhost:port/address_**. Ao clicar no botão **_Send_** ele retornará todos os dados da API:
-![get](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressGetAll.jpg)
+![rotagetgeral](https://user-images.githubusercontent.com/95878600/166620491-5bb7812d-c735-48f1-8bf0-906ca2100745.png)
 
 2. **GET/path/id**
 - Não muito diferente da requisição acima, o método também será o GET porém depois do caminho será aplicado o **_ID_** de um registro, para o caso de precisar verificar algum registro específico. Com o método GET selecionado e a URL digitada, após ela você adiciona **_/1_** (Em nossa api o ID será gerado pelo UUID, copie o ID exibido no método anterior):
-![getid](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressGetUnic.jpg)
+![rotagetind](https://user-images.githubusercontent.com/95878600/166620512-972aa91f-1d5d-428d-ad62-40bfd76e8226.png)
 
 ***
 ### Update - **PUT**:
 - Nesta API foi utilizada somente requisições PUT para atualizações. Ao lado da URL você precisará informar também um **_ID_**, para servir de referência a qual dado será modificado:
-![put](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressUpdate.jpg)
+![rotaput](https://user-images.githubusercontent.com/95878600/166620533-90ede9c6-4f62-4e86-b1db-273428f2ac06.png)
 
 ***
 ### Delete - **DELETE**:
 - O método DELETE tem a função de remover algum recurso que foi especificado, no caso das nossa requisições ele irá deletar o **_ID_** informado após a URL passada:
-![delete](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressDelete.jpg)
+![rotadelete](https://user-images.githubusercontent.com/95878600/166620543-a041816d-38c5-4c75-a155-d3a73d428f3f.png)
 
 ***
 ### Observação:
@@ -67,12 +67,9 @@ Se você preferir, pode importar para o Insomnia o arquivo "Insomnia_2021-12-03.
 - 6: Room
 - 7: Booking (Copiar, respectivamente, as chaves primarias users(ID) e rooms(ID) e colar nas chaves estrangeiras de booking (id_user) e (id_room)).
 - 8: Payment (Copiar, respectivamente, as chaves primarias users(ID), booking(ID), staff(ID) e colar nas chaves estrangeiras de payment (id_user), id_booking) e (id_staff)).
-***
-
-### Veja a nossa api hospedada no heroku
-[link](https://apihotelresiliapalace.herokuapp.com/)
 
 ***
+
 
 ## Equipe de desenvolvedores:
 
