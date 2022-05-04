@@ -15,7 +15,7 @@ npm install
 ```
 
 ***
-## 🏩 Execução do projeto:
+## Execução do projeto:
 - Depois de instalar todas as dependências, você deve executar o arquivo de banco de dados. Entra na pasta infra pelo terminal e execute:
 ```bash
 node create-and-populate.js
@@ -30,7 +30,7 @@ npm start
 ```
 
 ***
-## 🛎️ Rotas do projeto:
+## Rotas do projeto:
 - Nesse projeto foi utilizado o padrão de **_API Rest_** e as rotas consistem em duas partes: um método HTTP e um caminho para um recurso que será usado. Para esse projeto usamos os métodos HTTP baseados no **_CRUD_**.
 ### Create - **POST**:
 - A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
@@ -63,7 +63,7 @@ npm start
 Se você preferir, pode importar para o Insomnia o arquivo "Insomnia_2021-12-03.json", que está na pasta root/principal. Ele contém as rotas já prontas de cada entidade para teste no próprio Insomnia.
 
 ***
-## 🛌 Considerações finais:
+## Considerações finais:
 - Na nossa API, para popular o banco, você deve seguir uma ordem de cadastro de entidades caso você use um programa externo para isso(Insomnia ou Postman), pois certas entidades precisam de chaves estrangeiras já prontas. A ordem é:
 - 1: Address
 - 2: User (Copiar a chave primaria de address(ID) e colar na chave estrangeira de users(id_address)).
