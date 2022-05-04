@@ -29,7 +29,7 @@ npm start
 ### Create - **POST**:
 - Para consultar as rotas, usa-se uma ferramenta para consulta de requisições, da qual indicamos o [Insomnia](https://insomnia.rest/), onde você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/address_**.
 - Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
-![post](https://github.com/CaioLima96/projetoModulo04/blob/master/assets/img/printsRotas/addressPost.jpg)
+![rotapost](https://user-images.githubusercontent.com/95878600/166620427-083b9470-be46-430b-8d1b-525dd5a302bc.jpg)
 
 ***
 ### Read - **GET**:
