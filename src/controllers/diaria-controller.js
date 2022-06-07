@@ -9,7 +9,7 @@ const diaria = (app,bd)=>{
     app.post('/diaria', (req, res) => {
         const body = req.body
         console.log(req.body)
-        const DiariaDado = new Diaria(body.ENTRADA, body.SAIDA, body.CHECKIN, body.CHECKOUT)
+        const DiariaDado = new Diaria(body.ENTRADA, body.SAIDA, body.CHECKIN, body.CHECKOUT, body.ADULTOS, body.CRIANCAS)
         const data = async() => {
             try {
                 
@@ -60,8 +60,10 @@ const diaria = (app,bd)=>{
                 const DiariaDado = new Diaria(body.ENTRADA || diariasDado[0].ENTRADA, 
                     body.SAIDA|| diariasDado[0].SAIDA, 
                     body.CHECKIN || diariasDado[0].CHECKIN,
-                    body.CHECKOUT || diariasDado[0].CHECKOUT)
-                 const parametros = [DiariaDado.entrada, DiariaDado.saida, DiariaDado.checkin, DiariaDado.checkout, id]
+                    body.CHECKOUT || diariasDado[0].CHECKOUT,
+                    body.ADULTOS || diariasDado[0].ADULTOS,
+                    body.CRIANCAS || diariasDado[0].CRIANCAS)
+                 const parametros = [DiariaDado.entrada, DiariaDado.saida, DiariaDado.checkin, DiariaDado.checkout, DiariaDado.adultos, DiariaDado.criancas, id]
                 const diarias =  await DAODiaria.altereDiarias(parametros)
                 res.send(diarias)
             }catch(err) {

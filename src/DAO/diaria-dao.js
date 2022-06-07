@@ -27,8 +27,8 @@ class DiariaDAO{
     }
     insereDiarias(NovaDiaria){
         return new Promise((resolve, reject) =>{
-            this. bd.run(`INSERT INTO DIARIAS (ENTRADA, SAIDA, CHECKIN, CHECKOUT) VALUES (?,?,?,?)`,
-            [NovaDiaria.entrada, NovaDiaria.saida, NovaDiaria.checkin, NovaDiaria.checkout],(error)=>{
+            this. bd.run(`INSERT INTO DIARIAS (ENTRADA, SAIDA, CHECKIN, CHECKOUT, ADULTOS, CRIANCAS) VALUES (?,?,?,?,?,?)`,
+            [NovaDiaria.entrada, NovaDiaria.saida, NovaDiaria.checkin, NovaDiaria.checkout, NovaDiaria.criancas, NovaDiaria.adultos],(error)=>{
                 if(error){
                    reject(error);
                 }else{
@@ -41,7 +41,7 @@ class DiariaDAO{
     }
     altereDiarias(Parametros){
         return new Promise((resolve, reject) =>{
-            this.bd.run(`UPDATE DIARIAS SET ENTRADA = ?, SAIDA = ?, CHECKIN = ?, CHECKOUT = ? WHERE id = ?`, Parametros ,(error)=>{
+            this.bd.run(`UPDATE DIARIAS SET ENTRADA = ?, SAIDA = ?, CHECKIN = ?, CHECKOUT = ?, ADULTOS = ?, CRIANCAS = ? WHERE id = ?`, Parametros ,(error)=>{
             if(error){
                 console.log(error)
                reject(error);
@@ -67,5 +67,3 @@ class DiariaDAO{
     }
 
 }
-
-module.exports = DiariaDAO;

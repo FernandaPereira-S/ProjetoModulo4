@@ -1,9 +1,11 @@
 class Diaria{
-    constructor( entrada , saida , checkin , checkout ){
+    constructor( entrada , saida , checkin , checkout , adultos , criancas ){
         this.entrada = this.verificarEntrada(entrada);
         this.saida = saida;
         this.checkin = checkin;
         this.checkout = checkout;
+        this.adultos = adultos;
+        this.criancas = criancas;
     }
     verificarEntrada(entrada){ 
         if(entrada.length <= 10){
